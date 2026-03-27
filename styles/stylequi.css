@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    font-family: "Montserrat";
+}
+
+section{
+    width: 100vw;
+    background-color: #8A2051;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr 1fr 180px;
+    padding: 10px 30px 10px 30px;
+    background-color: black;
+    color: white;
+}
+
+img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.nav > a{
+    text-decoration: none;
+    color: white;
+}
+
+.inscrire > a{
+    background-color: #AE2344;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.inscrire :hover{
+    transition: none;
+    transform: scale(1.03);
+}
+
+.logo{
+    display: flex;
+    width: 90px;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+header > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle{
+    height: 9px;
+    width: 183px;
+    background-color: #AE2344;
+}
+
+.mid{
+    display: flex;
+    gap: 20px;
+}
+
+.carré p{
+    background-color: #FFF5D4;
+    width: 200px;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.carré{
+    display: flex;
+    align-items: center;
+}
+
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    background-color: #8A2051;
+    border: solid black;
+    border-radius: 16px;
+    width: 500px;
+    align-items: center;
+    color: white;
+}
+
+.card1 img{
+  width: 100%;
+  height: 300px; /* Hauteur fixe */
+  object-fit: cover; /* Recadre proprement */
+}
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    background-color: #8A2051;
+    border: solid black;
+    border-radius: 16px;
+    width: 240px;
+    align-items: center;
+    color: white;
+}
+
+.card2 img {
+  width: 100%;
+  height: 200px; /* Hauteur fixe */
+  object-fit: cover; /* Recadre proprement */
+}

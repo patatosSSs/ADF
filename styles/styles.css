@@ -1,0 +1,164 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: "Montserrat";
+}
+
+header{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr 1fr 180px;
+    padding: 10px 30px 10px 30px;
+    background-color: black;
+    color: white;
+    gap: 20px;
+}
+
+.sec1{
+    min-height: 100vh;
+    max-height: 100vh;
+    background-image: url(/image/background/Design\ sans\ titre.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sec2{
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+img{
+    width: 100%;
+    border-radius: 16px;
+}
+.nav > a{
+    text-decoration: none;
+    color: white;
+}
+
+.inscrire > a{
+    background-color: #AE2344;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.inscrire :hover{
+    transition: none;
+    transform: scale(1.03);
+}
+
+.logo{
+    display: flex;
+    width: 90px;
+    justify-content: center;
+}
+
+header > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle{
+    height: 9px;
+    width: 183px;
+    background-color: #AE2344;
+}
+
+.rectangle2{
+    height: 9px;
+    width: 350px;
+    background: #AE2344;
+    margin: auto;
+    margin-right: 0px;
+}
+
+main{
+    color: white;
+}
+
+.top{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.gauche{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 30%;
+    font-size: 120%;
+    padding-top: 0;
+}
+
+.droite{
+    width: 70%;
+}
+
+.image{
+    width: 80%;
+    position: relative;
+}
+
+.bottom{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+
+.title{
+    font-size: 180%;
+    margin: 0;
+}
+
+.sec2{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFF5D4;
+    padding: 30px;
+    border-radius: 16px;
+    gap: 50px;
+}
+
+.card2 div a{
+    text-decoration: none;
+    color: white;
+    background-color: #AE2344;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.svg{
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    width: 13%;
+}
+
+.texte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
