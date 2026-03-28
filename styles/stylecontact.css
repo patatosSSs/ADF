@@ -1,0 +1,156 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: "Montserrat";
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    color: black;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    flex: 1;
+}
+
+.sec{
+    min-width: 100%;
+    min-height: 100dvh;
+    background: #FFF5D4;
+    display: flex; 
+    flex-direction: column;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+    background-color: black;
+    color: white;
+    gap: 20px;
+}
+
+header > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    gap: 9vw;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+}
+
+.inscrire > a{
+    background-color: #AE2344;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+}
+
+.inscrire :hover{
+    transition: none;
+    transform: scale(1.03);
+}
+
+.logo{
+    display: flex;
+    width: 90px;
+    justify-content: center;
+    padding-left: 20px;
+    font-size: 1vw;
+}
+
+header > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    padding-left: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    padding: 20px;
+    border-radius: 16px;
+    width: 60%;
+    gap: 20px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    background:#8A2051;
+}
+
+form .mess{
+    border-radius: 8px;
+    border: none;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+form .pre,.nom{
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    background: #AE2344;
+}
+
+.rectangle{
+    height: 9px;
+    width: 130px;
+    background-color: #AE2344;
+}
+
+.rectangle2{
+    height: 9px;
+    width: 300px;
+    background-color: #AE2344;
+}
+
+

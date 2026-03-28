@@ -88,13 +88,12 @@ header > div{
 
 .rectangle2{
     height: 9px;
-    width: 183px;
+    width: 30%;
     background-color: #AE2344;
 }
 
 .sec{
     min-height: 200vh;
-    max-height: 200vh;
     background-color: #8A2051;
 }
 
@@ -137,9 +136,15 @@ header > div{
 
 .main2{
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
 .right p{
     background: #FFF5D4;
@@ -147,8 +152,66 @@ header > div{
     padding: 20px;
     border-radius: 16px;
     margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .left p{
     padding-left: 15px;
+    font-size: 1.4rem;
+}
+
+
+.rectangle3{
+    position: absolute;
+    right: 0;
+    height: 9px;
+    width: 38%;
+    background-color: #AE2344;
+}
+
+.main3{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFF5D4;
+    color: black;
+    padding: 30px;
+    border-radius: 16px;
+    width: 900px;
+}
+
+.card p,h2{
+    font-size: 1.3rem;
+}
+
+.txt{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.temoi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2{
+    color: black;
+    background: white;
+    padding: 20px;
+    font-size: 3rem;
+    border-radius: 16px;
 }
