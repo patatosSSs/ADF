@@ -1,36 +1,48 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     font-family: "Montserrat";
 }
 
-section{
-    width: 100vw;
-    background-color: #8A2051;
-}
-
 main{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 20px;
-}
-
-header{
-    display: grid;
-    grid-template-columns: 200px 1fr 1fr 1fr 1fr 180px;
-    padding: 10px 30px 10px 30px;
-    background-color: black;
     color: white;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
 }
 
 img{
     width: 100%;
-    border-radius: 16px;
 }
 
-.nav > a{
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+    background-color: black;
+    color: white;
+    gap: 20px;
+}
+
+header > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    gap: 9vw;
+}
+
+nav > a{
     text-decoration: none;
     color: white;
+    font-size: 1vw;
 }
 
 .inscrire > a{
@@ -42,6 +54,7 @@ img{
     border-radius: 40px;
     text-decoration: none;
     color: white;
+    font-size: 1vw;
 }
 
 .inscrire :hover{
@@ -54,6 +67,7 @@ img{
     width: 90px;
     justify-content: center;
     padding-left: 20px;
+    font-size: 1vw;
 }
 
 header > div{
@@ -62,60 +76,79 @@ header > div{
     align-items: center;
 }
 
+.deb{
+    padding: 0 0 0 15px;
+}
+
 .rectangle{
     height: 9px;
     width: 183px;
     background-color: #AE2344;
 }
 
-.mid{
+.rectangle2{
+    height: 9px;
+    width: 183px;
+    background-color: #AE2344;
+}
+
+.sec{
+    min-height: 200vh;
+    max-height: 200vh;
+    background-color: #8A2051;
+}
+
+.image{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    flex-wrap: wrap;
+}
+
+.mainim{
+    border-radius: 16px;
+}
+
+.mainim img{
+    height: 500px;
+    border-radius: 16px;
+}
+
+.im{
+    margin-right: 30px;
+    border-radius: 16px;
+}
+
+.im img{
+    height: 500px;
+    border-radius: 16px;
+}
+
+.adf{
+    background: #FFF5D4;
+    border-radius: 16px;
+    margin-left: 30px;
+}
+
+.adf img{
+  height: 200px;
+  object-fit: cover;
+}
+
+.main2{
     display: flex;
     gap: 20px;
 }
 
-.carré p{
-    background-color: #FFF5D4;
-    width: 200px;
-    border-radius: 16px;
+
+.right p{
+    background: #FFF5D4;
+    color: black;
     padding: 20px;
-}
-
-.carré{
-    display: flex;
-    align-items: center;
-}
-
-
-.card1{
-    display: flex;
-    flex-direction: column;
-    background-color: #8A2051;
-    border: solid black;
     border-radius: 16px;
-    width: 500px;
-    align-items: center;
-    color: white;
+    margin-right: 10px;
 }
 
-.card1 img{
-  width: 100%;
-  height: 300px; /* Hauteur fixe */
-  object-fit: cover; /* Recadre proprement */
-}
-
-.card2{
-    display: flex;
-    flex-direction: column;
-    background-color: #8A2051;
-    border: solid black;
-    border-radius: 16px;
-    width: 240px;
-    align-items: center;
-    color: white;
-}
-
-.card2 img {
-  width: 100%;
-  height: 200px; /* Hauteur fixe */
-  object-fit: cover; /* Recadre proprement */
+.left p{
+    padding-left: 15px;
 }
