@@ -26,7 +26,7 @@ img{
 .sec1{
     min-height: 100vh;
     max-height: 100vh;
-    background-image: url(/image/background/Design\ sans\ titre.png);
+    background-image: url(../image/Design.png);
     background-size: cover;
     display: flex;
     flex-direction: column;

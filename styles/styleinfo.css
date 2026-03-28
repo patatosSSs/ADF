@@ -13,7 +13,7 @@ img{
 .sec1{
     min-width: 100%;
     min-height: 100dvh;
-    background-image: url(/image/background/back\ info.png);
+    background-image: url(../image/fond.png);
     background-size: cover;
 }
 
@@ -244,10 +244,10 @@ header > div{
     justify-content: center;
     flex-direction: row;
     background-color: #8A2051;
-    width: 1200px;
-    height: 700px;
+    width: 1100px;
+    height: 500px;
     padding: 30px;
-    margin-top: 80px;
+    margin-top: 10px;
     border-radius: 16px;
     gap: 100px;
 }
