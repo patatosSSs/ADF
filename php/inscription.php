@@ -13,51 +13,6 @@
 </head>
 
 <body>
-    <?php
-
-    $email = "";
-    $prenom = "";
-    $nom = "";
-    $message = "";
-    $erreur = "";
-
-
-    if (isset($_POST["clic"])) {
-        try   // Connexion à la base de données
-        {
-            $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8");
-            $bdd = new PDO('mysql:host=localhost;dbname=utilisateur', 'root', '', $options);
-        } catch (Exception $err) {
-            die('Erreur connexion MySQL : ' . $err->getMessage());
-        }
-
-
-        if (!empty($_POST["email"]) || !empty($_POST["nom"]) || !empty($_POST["prenom"]) || !empty($_POST["creneau"]) || !empty($_POST["participer"])) {
-            $email = $_POST["email"];
-            $prenom = $_POST["prenom"];
-            $nom = $_POST["nom"];
-            $creneau = $_POST["creneau"];
-            $participer = $_POST["participer"];
-            $verif = $bdd->query("SELECT email FROM utilisateurs WHERE email = '$email'");
-            $table = $verif->fetchAll(PDO::FETCH_ASSOC);
-            if (!empty($table)) {
-                $erreur = "<div class ='erreur'>Cette adresse mail est déjà utilisée</div>";
-            } else {
-                $sql = "INSERT INTO utilisateurs(prenom,email,nom,creneau,participer) VALUES ('$prenom','$email','$nom','$creneau','$participer')";
-                $result = $bdd->exec($sql);
-                $message = "<div class = 'message'>Inscription reuissite</div>";
-            }
-            $bdd = null;
-        }
-
-    } else {
-        $message = "<div class = 'message'>Veuillez remplir le formulaire</div>";
-    }
-
-    ?>
-
-
-
     <header>
         <div class="logo"><img src="image/abeille.png" alt="logo">
             <h1>ADF</h1>
